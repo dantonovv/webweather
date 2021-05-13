@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <title>Какая погода?</title>
+  </head>
+  <body>
+    <div class="wrapper" id="website-heading">
+      <span id="website-title-span"><h1 id="website-title">Какая погода?</h1></span>
+    </div>
+    <div class="wrapper" id="city-input">
+      <input type="search" id="city" autocomplete="off" placeholder="Москва">      
+    </div>
+    <div class="wrapper" id="unit-buttons">
+      <button type="button" class="button" id="c-to-f" onclick="getWeather(this.id)">Фаренгейты</button>
+      <button type="button" class="button" id="f-to-c" onclick="getWeather(this.id)">Цельсии</button>
+    </div>
+    <div class="wrapper" id="main-information">
+      <span class="span-wrapper" ><h1 id="main-temp"></h1></span>
+    </div>
+    <div class="wrapper" id="additional-information-div">
+      <h1 id="search-for-location">Укажите страну, город, штат и выберете в каких единицах показать</h1>
+      <div id="feels-like-div">
+        <h1 id="feels-like"></h1>
+      </div>
+    </div>
+    <div class="wrapper" id="more-info-table">
+      <table>
+        <tr>
+          <th>Ожидаемая высокая температура</th>
+          <th>Ожидаемая низкая температура</th>
+          <th>Влажность</th>
+          <th>Скорость ветра</th>
+        </tr>
+        <tr>
+          <td id="high"></td>
+          <td id="low"></td>
+          <td id="humidity"></td>
+          <td id="wind_speed"></td>
+        </tr>
+      </table>
+    </div>
+
+   
+
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
